@@ -102,7 +102,17 @@ include "includes/options_config.php";
         echo "&nbsp; $mod_alias  <font color='red'><b>disabled</b></font>. | <a href='includes/module_action.php?service=$mod_name&action=start&page=module'><b>start</b></a>"; 
     }
     ?>
-
+    
+    <br>
+    
+    <?
+    $iface_mon0 = exec("/sbin/ifconfig | grep mon0 ");
+    if ($iface_mon0 != "") {
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;Interface <font color='lime'><b>enabled</b></font>.&nbsp; [mon0]</a>";
+    } else {
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;Interface <font color='red'><b>disabled</b></font>. [mon0]</a>";
+    }
+    ?>
 </div>
 
 <br>

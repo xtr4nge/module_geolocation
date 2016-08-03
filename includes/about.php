@@ -4,7 +4,7 @@
 		display: inline-block;
 	}
 </style>
-<b>GeoLocation</b> A tool for changing GeoLocation (WiFi only).
+<b>GeoLocation</b> A tool for changing GeoLocation (WiFi only). Monitor mode is required (<b>mon0</b>)
 <br><br>
 <b>Author</b>: xtr4nge [_AT_] gmail.com - @xtr4nge
 
